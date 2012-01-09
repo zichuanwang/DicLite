@@ -10,7 +10,6 @@
 		E12FD75114B8B72A00A3BAA9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD75014B8B72A00A3BAA9 /* main.cpp */; };
 		E12FD75314B8B72A00A3BAA9 /* dict.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E12FD75214B8B72A00A3BAA9 /* dict.1 */; };
 		E12FD75C14B8B7D100A3BAA9 /* dict_network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD75A14B8B7D100A3BAA9 /* dict_network.cpp */; };
-		E12FD76014B8B80300A3BAA9 /* dict_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD75E14B8B80300A3BAA9 /* dict_server.cpp */; };
 		E12FD76414B8B82E00A3BAA9 /* dict_database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD76214B8B82E00A3BAA9 /* dict_database.cpp */; };
 		E12FD76914B8B86800A3BAA9 /* dict_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD76714B8B86800A3BAA9 /* dict_input.cpp */; };
 		E12FD76C14B8B87300A3BAA9 /* dict_haici_xml_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD76A14B8B87300A3BAA9 /* dict_haici_xml_parser.cpp */; };
@@ -38,8 +37,6 @@
 		E12FD75214B8B72A00A3BAA9 /* dict.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = dict.1; sourceTree = "<group>"; };
 		E12FD75A14B8B7D100A3BAA9 /* dict_network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_network.cpp; sourceTree = "<group>"; };
 		E12FD75B14B8B7D100A3BAA9 /* dict_network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict_network.h; sourceTree = "<group>"; };
-		E12FD75E14B8B80300A3BAA9 /* dict_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_server.cpp; sourceTree = "<group>"; };
-		E12FD75F14B8B80300A3BAA9 /* dict_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict_server.h; sourceTree = "<group>"; };
 		E12FD76214B8B82E00A3BAA9 /* dict_database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_database.cpp; sourceTree = "<group>"; };
 		E12FD76314B8B82E00A3BAA9 /* dict_database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict_database.h; sourceTree = "<group>"; };
 		E12FD76714B8B86800A3BAA9 /* dict_input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_input.cpp; sourceTree = "<group>"; };
@@ -89,7 +86,6 @@
 				E12FD76614B8B84D00A3BAA9 /* dict_xml_parser */,
 				E12FD76514B8B84400A3BAA9 /* dict_client */,
 				E12FD76114B8B81F00A3BAA9 /* dict_database */,
-				E12FD75D14B8B7F500A3BAA9 /* dict_server */,
 				E12FD75914B8B7C300A3BAA9 /* dict_network */,
 				E12FD75014B8B72A00A3BAA9 /* main.cpp */,
 				E12FD75214B8B72A00A3BAA9 /* dict.1 */,
@@ -104,15 +100,6 @@
 				E12FD75B14B8B7D100A3BAA9 /* dict_network.h */,
 			);
 			name = dict_network;
-			sourceTree = "<group>";
-		};
-		E12FD75D14B8B7F500A3BAA9 /* dict_server */ = {
-			isa = PBXGroup;
-			children = (
-				E12FD75E14B8B80300A3BAA9 /* dict_server.cpp */,
-				E12FD75F14B8B80300A3BAA9 /* dict_server.h */,
-			);
-			name = dict_server;
 			sourceTree = "<group>";
 		};
 		E12FD76114B8B81F00A3BAA9 /* dict_database */ = {
@@ -206,7 +193,6 @@
 			files = (
 				E12FD75114B8B72A00A3BAA9 /* main.cpp in Sources */,
 				E12FD75C14B8B7D100A3BAA9 /* dict_network.cpp in Sources */,
-				E12FD76014B8B80300A3BAA9 /* dict_server.cpp in Sources */,
 				E12FD76414B8B82E00A3BAA9 /* dict_database.cpp in Sources */,
 				E12FD76914B8B86800A3BAA9 /* dict_input.cpp in Sources */,
 				E12FD76C14B8B87300A3BAA9 /* dict_haici_xml_parser.cpp in Sources */,
@@ -300,6 +286,7 @@
 				E12FD75814B8B72A00A3BAA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

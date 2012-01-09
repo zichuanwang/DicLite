@@ -19,7 +19,7 @@
 
 using namespace std;
 
-#define DICT_PORT 3845
+#define DICT_PORT 4100
 #define MAX_BUFFER_SIZE 10000
 #define QUEUE_SIZE 128
 

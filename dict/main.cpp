@@ -8,7 +8,16 @@
 
 #include "dict_input.h"
 #include "dict_client.h"
-#include "dict_server.h"
+
+Dict_Client client;
+
+void sigroutine(int dunno) {
+    switch(dunno) { 
+        case SIGINT:  
+            client.stop();
+            exit(0);
+    }
+}
 
 int main(int argc, char* argv[]) {
     
@@ -19,10 +28,8 @@ int main(int argc, char* argv[]) {
         exit(1);
     }
     
-    Dict_Server server;
-    server.run();
+    signal(SIGINT, sigroutine); 
     
-    Dict_Client client;
     client.init(input);
     client.run();
     

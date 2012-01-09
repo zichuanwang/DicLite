@@ -6,7 +6,8 @@ using namespace std;
 class Dict_Network{
 public:
 	Dict_Network();
-	std::string get_word_from_net(std::string word);
+    ~Dict_Network();
+    std::string get_answer(std::string word);
 private:
 	std::string send_request(string &url);
 };

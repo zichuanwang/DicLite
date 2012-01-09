@@ -32,11 +32,14 @@ Dict_Network::Dict_Network()
 {
 }
 
-std::string Dict_Network::get_word_from_net(std::string word)
+Dict_Network::~Dict_Network()
+{
+}
+
+std::string Dict_Network::get_answer(std::string word)
 {
 	string searchURL = string(kHaiciQueryApi) + word;
-	//cout << "request url:" << searchURL << endl;
-	std::string answer = send_request(searchURL);
+    std::string answer = send_request(searchURL);
 	return answer;
 }
 
@@ -63,5 +66,6 @@ std::string Dict_Network::send_request(string &url)
 			return buffer;
 		}  
 	}  
-	return NULL;
+    buffer.clear();
+	return buffer;
 }
