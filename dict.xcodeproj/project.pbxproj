@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		E12FD75114B8B72A00A3BAA9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD75014B8B72A00A3BAA9 /* main.cpp */; };
 		E12FD75314B8B72A00A3BAA9 /* dict.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E12FD75214B8B72A00A3BAA9 /* dict.1 */; };
+		E12FD75C14B8B7D100A3BAA9 /* dict_network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD75A14B8B7D100A3BAA9 /* dict_network.cpp */; };
+		E12FD76014B8B80300A3BAA9 /* dict_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD75E14B8B80300A3BAA9 /* dict_server.cpp */; };
+		E12FD76414B8B82E00A3BAA9 /* dict_database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD76214B8B82E00A3BAA9 /* dict_database.cpp */; };
+		E12FD76914B8B86800A3BAA9 /* dict_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD76714B8B86800A3BAA9 /* dict_input.cpp */; };
+		E12FD76C14B8B87300A3BAA9 /* dict_haici_xml_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD76A14B8B87300A3BAA9 /* dict_haici_xml_parser.cpp */; };
+		E12FD77014B8B89000A3BAA9 /* Markup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD76E14B8B89000A3BAA9 /* Markup.cpp */; };
+		E12FD77314B8B92D00A3BAA9 /* dict_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E12FD77114B8B92D00A3BAA9 /* dict_client.cpp */; };
+		E12FD77514B8BC6400A3BAA9 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E12FD77414B8BC6400A3BAA9 /* libiconv.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +36,21 @@
 		E12FD74C14B8B72A00A3BAA9 /* dict */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dict; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12FD75014B8B72A00A3BAA9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E12FD75214B8B72A00A3BAA9 /* dict.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = dict.1; sourceTree = "<group>"; };
+		E12FD75A14B8B7D100A3BAA9 /* dict_network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_network.cpp; sourceTree = "<group>"; };
+		E12FD75B14B8B7D100A3BAA9 /* dict_network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict_network.h; sourceTree = "<group>"; };
+		E12FD75E14B8B80300A3BAA9 /* dict_server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_server.cpp; sourceTree = "<group>"; };
+		E12FD75F14B8B80300A3BAA9 /* dict_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict_server.h; sourceTree = "<group>"; };
+		E12FD76214B8B82E00A3BAA9 /* dict_database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_database.cpp; sourceTree = "<group>"; };
+		E12FD76314B8B82E00A3BAA9 /* dict_database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict_database.h; sourceTree = "<group>"; };
+		E12FD76714B8B86800A3BAA9 /* dict_input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_input.cpp; sourceTree = "<group>"; };
+		E12FD76814B8B86800A3BAA9 /* dict_input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict_input.h; sourceTree = "<group>"; };
+		E12FD76A14B8B87300A3BAA9 /* dict_haici_xml_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_haici_xml_parser.cpp; sourceTree = "<group>"; };
+		E12FD76B14B8B87300A3BAA9 /* dict_haici_xml_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict_haici_xml_parser.h; sourceTree = "<group>"; };
+		E12FD76E14B8B89000A3BAA9 /* Markup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Markup.cpp; sourceTree = "<group>"; };
+		E12FD76F14B8B89000A3BAA9 /* Markup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Markup.h; sourceTree = "<group>"; };
+		E12FD77114B8B92D00A3BAA9 /* dict_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_client.cpp; sourceTree = "<group>"; };
+		E12FD77214B8B92D00A3BAA9 /* dict_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dict_client.h; sourceTree = "<group>"; };
+		E12FD77414B8BC6400A3BAA9 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12FD77514B8BC6400A3BAA9 /* libiconv.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +68,7 @@
 		E12FD74114B8B72200A3BAA9 = {
 			isa = PBXGroup;
 			children = (
+				E12FD77414B8BC6400A3BAA9 /* libiconv.dylib */,
 				E12FD74F14B8B72A00A3BAA9 /* dict */,
 				E12FD74D14B8B72A00A3BAA9 /* Products */,
 			);
@@ -60,10 +85,72 @@
 		E12FD74F14B8B72A00A3BAA9 /* dict */ = {
 			isa = PBXGroup;
 			children = (
+				E12FD76D14B8B87D00A3BAA9 /* third party */,
+				E12FD76614B8B84D00A3BAA9 /* dict_xml_parser */,
+				E12FD76514B8B84400A3BAA9 /* dict_client */,
+				E12FD76114B8B81F00A3BAA9 /* dict_database */,
+				E12FD75D14B8B7F500A3BAA9 /* dict_server */,
+				E12FD75914B8B7C300A3BAA9 /* dict_network */,
 				E12FD75014B8B72A00A3BAA9 /* main.cpp */,
 				E12FD75214B8B72A00A3BAA9 /* dict.1 */,
 			);
 			path = dict;
+			sourceTree = "<group>";
+		};
+		E12FD75914B8B7C300A3BAA9 /* dict_network */ = {
+			isa = PBXGroup;
+			children = (
+				E12FD75A14B8B7D100A3BAA9 /* dict_network.cpp */,
+				E12FD75B14B8B7D100A3BAA9 /* dict_network.h */,
+			);
+			name = dict_network;
+			sourceTree = "<group>";
+		};
+		E12FD75D14B8B7F500A3BAA9 /* dict_server */ = {
+			isa = PBXGroup;
+			children = (
+				E12FD75E14B8B80300A3BAA9 /* dict_server.cpp */,
+				E12FD75F14B8B80300A3BAA9 /* dict_server.h */,
+			);
+			name = dict_server;
+			sourceTree = "<group>";
+		};
+		E12FD76114B8B81F00A3BAA9 /* dict_database */ = {
+			isa = PBXGroup;
+			children = (
+				E12FD76214B8B82E00A3BAA9 /* dict_database.cpp */,
+				E12FD76314B8B82E00A3BAA9 /* dict_database.h */,
+			);
+			name = dict_database;
+			sourceTree = "<group>";
+		};
+		E12FD76514B8B84400A3BAA9 /* dict_client */ = {
+			isa = PBXGroup;
+			children = (
+				E12FD77114B8B92D00A3BAA9 /* dict_client.cpp */,
+				E12FD77214B8B92D00A3BAA9 /* dict_client.h */,
+				E12FD76714B8B86800A3BAA9 /* dict_input.cpp */,
+				E12FD76814B8B86800A3BAA9 /* dict_input.h */,
+			);
+			name = dict_client;
+			sourceTree = "<group>";
+		};
+		E12FD76614B8B84D00A3BAA9 /* dict_xml_parser */ = {
+			isa = PBXGroup;
+			children = (
+				E12FD76A14B8B87300A3BAA9 /* dict_haici_xml_parser.cpp */,
+				E12FD76B14B8B87300A3BAA9 /* dict_haici_xml_parser.h */,
+			);
+			name = dict_xml_parser;
+			sourceTree = "<group>";
+		};
+		E12FD76D14B8B87D00A3BAA9 /* third party */ = {
+			isa = PBXGroup;
+			children = (
+				E12FD76E14B8B89000A3BAA9 /* Markup.cpp */,
+				E12FD76F14B8B89000A3BAA9 /* Markup.h */,
+			);
+			name = "third party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +205,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12FD75114B8B72A00A3BAA9 /* main.cpp in Sources */,
+				E12FD75C14B8B7D100A3BAA9 /* dict_network.cpp in Sources */,
+				E12FD76014B8B80300A3BAA9 /* dict_server.cpp in Sources */,
+				E12FD76414B8B82E00A3BAA9 /* dict_database.cpp in Sources */,
+				E12FD76914B8B86800A3BAA9 /* dict_input.cpp in Sources */,
+				E12FD76C14B8B87300A3BAA9 /* dict_haici_xml_parser.cpp in Sources */,
+				E12FD77014B8B89000A3BAA9 /* Markup.cpp in Sources */,
+				E12FD77314B8B92D00A3BAA9 /* dict_client.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +266,8 @@
 		E12FD75714B8B72A00A3BAA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				OTHER_LDFLAGS = "-lcurl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -179,6 +275,8 @@
 		E12FD75814B8B72A00A3BAA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				OTHER_LDFLAGS = "-lcurl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

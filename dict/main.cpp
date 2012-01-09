@@ -6,13 +6,25 @@
 //  Copyright (c) 2012年 TJU. All rights reserved.
 //
 
-#include <iostream>
+#include "dict_input.h"
+#include "dict_client.h"
+#include "dict_server.h"
 
-int main (int argc, const char * argv[])
-{
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(int argc, char* argv[]) {
+    
+    Dict_Input input;
+    input.resolve_para(argc, argv);
+    if(input.has_error()) {
+        input.display_usage();
+        exit(1);
+    }
+    
+    Dict_Server server;
+    server.run();
+    
+    Dict_Client client;
+    client.init(input);
+    client.run();
+    
+    exit(0);
 }
-
