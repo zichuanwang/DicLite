@@ -110,9 +110,9 @@ std::string Dict_Client::get_answer_through_network(std::string &word) {
 
 void Dict_Client::display_help_page() {
     printf("\33[1mNAME\33[0m\n");
-    printf("\t\33[1mdict\33[0m -- dictionary\n\n");
+    printf("\t\33[1mdi\33[0m -- dictionary\n\n");
     printf("\33[1mSYNOPSIS\33[0m\n");
-    printf("\t\33[1mdict \33[0m[\33[1m-ehns\33[0m] [word]\n\n");
+    printf("\t\33[1mdi \33[0m[\33[1m-ehns\33[0m] [word]\n\n");
     printf("\t\33[1m-e\33[0m -- example sentenses\n");
     printf("\t\33[1m-h\33[0m -- help page\n");
     printf("\t\33[1m-n\33[0m -- network only\n");

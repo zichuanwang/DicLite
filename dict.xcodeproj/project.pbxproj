@@ -32,7 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E12FD74C14B8B72A00A3BAA9 /* dict */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dict; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12FD74C14B8B72A00A3BAA9 /* di */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = di; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12FD75014B8B72A00A3BAA9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E12FD75214B8B72A00A3BAA9 /* dict.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = dict.1; sourceTree = "<group>"; };
 		E12FD75A14B8B7D100A3BAA9 /* dict_network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dict_network.cpp; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		E12FD74D14B8B72A00A3BAA9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E12FD74C14B8B72A00A3BAA9 /* dict */,
+				E12FD74C14B8B72A00A3BAA9 /* di */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 			);
 			name = dict;
 			productName = dict;
-			productReference = E12FD74C14B8B72A00A3BAA9 /* dict */;
+			productReference = E12FD74C14B8B72A00A3BAA9 /* di */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -254,7 +254,7 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				OTHER_LDFLAGS = "-lcurl";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = di;
 			};
 			name = Debug;
 		};
@@ -263,7 +263,7 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				OTHER_LDFLAGS = "-lcurl";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = di;
 			};
 			name = Release;
 		};

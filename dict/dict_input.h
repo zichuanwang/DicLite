@@ -38,7 +38,7 @@ public:
     bool has_error() {return _parse_status == PARSE_FAILURE; }
     status_type status(){ return _status_type; }
     void display_usage() {
-        printf("usage: dict [-ehns] [word]\n");
+        printf("usage: di [-ehns] [word]\n");
     }
 protected:
     void resolve_status(int argc);
