@@ -8,6 +8,7 @@ class Dict_Client {
 private:
     Dict_Input _config;
     Dict_Database _database;
+    bool _vague_search;
 public:
     Dict_Client(); 
     ~Dict_Client();
@@ -21,4 +22,5 @@ protected:
     std::string get_answer_in_database(std::string &word);
     std::string get_answer_through_network(std::string &word);
     void sigroutine(int dunno);
+    static void display_help_page();
 };

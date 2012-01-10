@@ -159,13 +159,14 @@ void Dict_Haici_XML_Parser::display_std_info() {
     else {
         for(int i = 0; i < sugg_vec.size(); i++) {
             if(i == 0)
-                printf("您是否要查询:\n");
+                printf("\33[31mSuggestions:\33[0m\n");
             printf("%s\n", sugg_vec[i].c_str());
         }
     }
 }
 
 void Dict_Haici_XML_Parser::display_sentence() {
+    printf("\n");
     for(int i = 0; i < otp_vec.size(); i++) {
         printf("\33[35m%d.\33[0m\t%s\n\t\33[36m%s\33[0m\n", i, otp_vec[i].ost.c_str(), otp_vec[i].tst.c_str());
     }

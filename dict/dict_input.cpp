@@ -13,23 +13,20 @@ Dict_Input::~Dict_Input() {
 
 void Dict_Input::resolve_para(int argc, char* argv[]) {
     char ch;
-    while ((ch = getopt(argc, argv, "snvah")) != -1)
+    while ((ch = getopt(argc, argv, "ehns")) != -1)
     {
         switch (ch) {
-            case 's':
-                _para_status.para[sentence] = true;
-                break;
-            case 'n':
-                _para_status.para[network_only] = true;
-                break;
-            case 'v':
-                _para_status.para[vague_search] = true;
-                break;
-            case 'a':
-                _para_status.para[audio] = true;
+            case 'e':
+                _para_status.para[eg] = true;
                 break;
             case 'h':
                 _para_status.para[help] = true;
+                break;
+            case 'n':
+                _para_status.para[net] = true;
+                break;
+            case 's':
+                _para_status.para[sugg] = true;
                 break;
             case '?':
                 _parse_status = PARSE_FAILURE;
@@ -37,7 +34,7 @@ void Dict_Input::resolve_para(int argc, char* argv[]) {
         }
     }
     if(optind == argc) {
-        if(argc > 1)
+        if(argc > 1 && _para_status.para[help] == false)
             _parse_status = PARSE_FAILURE;
     }
     else {

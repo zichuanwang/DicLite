@@ -7,10 +7,9 @@
 #define PARSE_FAILURE 1
 
 typedef enum {
-    sentence,
-    network_only,
-    vague_search,
-    audio,
+    eg,
+    sugg,
+    net,
     help,
 } para_type;
 
@@ -39,7 +38,7 @@ public:
     bool has_error() {return _parse_status == PARSE_FAILURE; }
     status_type status(){ return _status_type; }
     void display_usage() {
-        printf("usage: dict [-snvah] [word]\n");
+        printf("usage: dict [-ehns] [word]\n");
     }
 protected:
     void resolve_status(int argc);

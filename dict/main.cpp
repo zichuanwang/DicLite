@@ -14,6 +14,7 @@ Dict_Client client;
 void sigroutine(int dunno) {
     switch(dunno) { 
         case SIGINT:  
+            printf("\nClose database safely\n");
             client.stop();
             exit(0);
     }
